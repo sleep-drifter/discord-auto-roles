@@ -2,7 +2,8 @@ import discord
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-TOKEN = "MTUwNDg4NjE0Mjg3NTYwMzA1NA.GnvU5E.2EG1MgPVhxRM0R4z0kieMZj-tcx7C-Y7b3IlHs"
+import os
+TOKEN = os.environ.get("DISCORD_TOKEN")
 
 YEAR_ROLES  = {"2026-grads", "2027-grads", "2028-grads", "2029-grads"}
 MAJOR_ROLES = {"software-eng", "engineering", "business"}
